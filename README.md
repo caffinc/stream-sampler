@@ -97,7 +97,7 @@ $ dd if=/dev/urandom count=1000 bs=1MB | base64 | java -jar stream-sampler.jar 5
 3Dj8E
 ```
 
-Compare this to a fast grep operation which takes 7.99957s (125 MB/s), which is very similar:
+Compare this to a fast grep operation which takes `7.99957s (125 MB/s)`, which is very similar:
 ```
 $ dd if=/dev/urandom count=1000 bs=1MB | base64 | grep " "
 1000+0 records in
